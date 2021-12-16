@@ -59,10 +59,10 @@ pipeline {
                script{
                    sh '''
                        docker login -u $USERNAME -p $PASSWORD
-                       docker push $USERNAME/$IMAGE_NAME:$IMAGE_TAG
+                       docker push $USERNAME/$IMAGE_NAME:$BUILD_TAG
                        docker stop $CONTAINER_NAME || true
                        docker rm $CONTAINER_NAME || true
-                       docker rmi $USERNAME/$IMAGE_NAME:$IMAGE_TAG
+                       docker rmi $USERNAME/$IMAGE_NAME:$BUILD_TAG
                    '''
                }
            }

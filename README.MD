@@ -1,9 +1,12 @@
 [![Build Status](http://54.144.136.33:8080/buildStatus/icon?job=cicd-jenkins-static-website)](http://54.144.136.33:8080/job/cicd-jenkins-static-website/)
 # COMPTE RENDU
-Mise en place d'un Pipline CI/CD à l'aide de Jenkins.<br>
-Déploiement sur des machines ubuntu (avec docker) sur AWS
+* Mise en place d'un Pipline CI/CD à l'aide de Jenkins.
+* Déploiement sur des machines ubuntu (avec docker) sur AWS
+* WebHook avec Git
 
-# Création de 2 machines EC2 destinée
+# 2 machines Ubuntu identiques EC2 sur AWS
+* Production
+* Staging
 ```bash
 #!/bin/bash
 curl -fsSL https://get.docker.com -o get-docker.sh
@@ -16,5 +19,3 @@ sudo systemctl enable docker
 * omar-ec2-dk-prod : 3.93.241.97
 
 
-# Configuration de Jenkins
-* Création d'un Projet Pipline lié à notre GitHub

@@ -5,7 +5,7 @@ pipeline {
         //IMAGE_TAG = "ajc-2.1"
         STAGING = "omar-ajc-staging-env"
         //PRODUCTION = "omar-ajc-prod-env"
-        //USERNAME = "omarpiotrdeveloper"
+        USERNAME = "omarpiotrdeveloper"
         CONTAINER_NAME = "nginxweb"
         EC2_PRODUCTION_HOST = "3.93.241.97"
         EC2_STAGING_HOST = "18.233.10.235"

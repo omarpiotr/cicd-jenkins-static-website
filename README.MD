@@ -1,3 +1,4 @@
+[![Build Status](http://54.144.136.33:8080/buildStatus/icon?job=cicd-jenkins-static-website)](http://54.144.136.33:8080/job/cicd-jenkins-static-website/)
 # COMPTE RENDU
 Mise en place d'un Pipline CI/CD à l'aide de Jenkins.<br>
 Déploiement sur des machines ubuntu (avec docker) sur AWS

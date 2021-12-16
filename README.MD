@@ -15,7 +15,5 @@ usermod -aG docker ubuntu
 systemctl start docker
 sudo systemctl enable docker 
 ```
-* omar-ec2-dk-staging : 18.233.10.235
-* omar-ec2-dk-prod : 3.93.241.97
 
 

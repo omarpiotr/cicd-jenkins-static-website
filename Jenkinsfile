@@ -43,13 +43,13 @@ pipeline {
            steps {
                script{
                    sh '''
-                       curl http://localhost:80 | grep -iq "Dimension"
+                       curl http://localhost:5000 | grep -iq "Dimension"
                    '''
                }
            }
        }
     
-    /*
+    
        stage ('clean env and save artifact') {
            agent any
            environment{
@@ -68,6 +68,7 @@ pipeline {
            }
        }
 
+        /*
        stage('Push image in staging and deploy it') {
             when {
                 expression { GIT_BRANCH == 'origin/master' }
